@@ -17,4 +17,4 @@ class Note:
         self.tags = {tag.strip().lower() for tag in self.tags if tag.strip()}
 
         if not self.tags:
-            raise ValueError(f"Tags {self.tags!r} must be non-empty set.")
+            raise ValueError(f"Tags: {self.tags!r} must be a non-empty set.")
